@@ -1,0 +1,3458 @@
+<!DOCTYPE html>
+<html lang="es"><head><script data-bard-client-injected="true">(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjExNjRiNzdiNDMzZDdhMDAyMWI4NjE4YjhjYTU3ZTMyZGI5MWUxMTMiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIwODkyNDAyMjc1Njg4OTQ2ODE0NiIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzIxZjg5NzBiOTg4M2UwMjFfcmVsbGVuby1nb25kb2xhLmh0bWwtNjUyIn0sImV4cCI6MTc5NTA1OTk1NywiaWF0IjoxNzk1MDU2MzU3LCJhbGciOiJSUzI1NiJ9.nVpZV6pvWwEY7i3wpSGX9vIV68eVMYUjphFSVNs7HNBGeMudCTZ_-0ToX_fDGzaLCyoMvM8GlTVVG6dRVHdypn11OnaNqjA4-2H_dOBRKdx2zxap-wxR9TkMKfUrcDkgC2aYIvBRo0Zr04Blm2FpYntnkB7b54WAghwGvHXQymaO04JbDVpnCTjoKMuQy3QJZGO4F5DastrtHnAzJ4yGw5l32a4L7tfzmWALalm8z3mVMpfjr4k9KUUYJL1u7qP-Ig5jnLweaecStPMSohOCAKtPzM-vaUTSk6HAQQWrGORenBeQe9Ig_C_SrL7qE7qrxRLKKGjLL1OmGt9iHAfZew","c_21f8970b9883e021_relleno-gondola.html-652")</script><script data-bard-client-injected="true">
+  document.addEventListener('input', (event) => {
+    if (event.target && (event.target.isContentEditable || event.target.hasAttribute('contenteditable'))) {
+      const clonedDoc = document.cloneNode(true);
+      const injectedScripts = clonedDoc.querySelectorAll('[data-bard-client-injected="true"]');
+      injectedScripts.forEach(el => el.remove());
+      window.parent.postMessage({
+        type: 'inlineEdit',
+        html: '<!DOCTYPE html>\n' + clonedDoc.documentElement.outerHTML
+      }, '*');
+    }
+  });
+</script><script data-bard-client-injected="true">(function(){'use strict';window.addEventListener("message",a=>{a.data&&a.data.type==="SUPPLEMENTAL_DATA_UPDATE"&&window.dispatchEvent(new CustomEvent("supplementaldataupdate",{detail:a.data.data}))});}).call(this);
+</script><script data-bard-client-injected="true">(function(){'use strict';var k=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function m(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var q=m(this);
+function r(a,b){if(b)a:{var d=q;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&k(d,a,{configurable:!0,writable:!0,value:b})}}function t(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function u(a){return t(a())}
+r("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});r("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function v(a,b){var d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);var c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var aa=(()=>{var a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){var b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let y=null;function z(a={}){return y?y:a.u?y=a.u:y=w(window.getComputedStyle(document.documentElement))}function A(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function B(a,b={}){var d;if(!(d=b.width)){d=A(a,"border-left-width");var c=A(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=A(a,"border-top-width"),c=A(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function C(a){return new Promise((b,d)=>{var c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function ba(a){return u(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function ca(a,b,d){return u(function*(){var c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return ba(c)})}
+var D=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||D(a,b)};function da(a,b){return z(b).map(d=>{var c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function E(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=aa();try{b.className=`${b.className} ${f}`}catch(h){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=da(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function F(a){return a.search(/^(data:)/)!==-1}function G(a,b,d){return u(function*(){var c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);var e=yield c.blob();return new Promise((f,g)=>{var h=new FileReader;h.onerror=g;h.onloadend=()=>{try{f(d({v:c,result:h.result}))}catch(l){g(l)}};h.readAsDataURL(e)})})}const H={};function ea(a,b,d){var c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function I(a,b,d){return u(function*(){var c=ea(a,b,d.F);if(H[c]!=null)return H[c];d.B&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());try{let f=yield G(a,d.l,({v:g,result:h})=>{b||(b=g.headers.get("Content-Type")||"");return h.split(/,/)[1]});var e=`data:${b};base64,${f}`}catch(f){e=d.o||""}return H[c]=e})};const J={R:"application/font-woff",S:"application/font-woff",O:"application/font-truetype",C:"application/vnd.ms-fontobject",J:"image/png",H:"image/jpeg",G:"image/jpeg",D:"image/gif",N:"image/tiff",M:"image/svg+xml",P:"image/webp"};function K(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function fa(a){return u(function*(){var b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):C(b)})}function ha(a,b){return u(function*(){if(a.currentSrc){var d=document.createElement("canvas");let c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return C(d)}d=a.poster;d=yield I(d,J[K(d).toLowerCase()]||"",b);return C(d)})}
+function ia(a,b){return u(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield L(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ja(a,b){return u(function*(){return D(a,HTMLCanvasElement)?fa(a):D(a,HTMLVideoElement)?ha(a,b):D(a,HTMLIFrameElement)?ia(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function ka(a,b,d){return u(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;var c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(D(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||D(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>L(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function la(a,b,d){var c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):z(d).forEach(f=>{var g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);D(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function ma(a,b){D(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function na(a,b){return u(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){let g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield L(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function L(a,b,d){return u(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ja(c,b)).then(c=>ka(a,c,b)).then(c=>{D(c,Element)&&(la(a,c,b),E(a,c,":before",b),E(a,c,":after",b),D(a,HTMLTextAreaElement)&&(c.textContent=a.value),D(a,HTMLInputElement)&&c.setAttribute("value",a.value),ma(a,c));return c}).then(c=>na(c,b)):null})};const M=/url\((['"]?)([^'"]+?)\1\)/g,oa=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,pa=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function qa(a){var b=[];a.replace(M,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!F(d))}
+function ra(a,b,d,c){return u(function*(){try{let e=d?(new URL(b,d||void 0)).toString():b,f;f=yield I(e,J[K(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function sa(a,{K:b}){return b?a.replace(pa,d=>{for(;;){let [c,,e]=oa.exec(d)||[];if(!e)return"";if(e===b)return`src: ${c};`}}):a}
+function N(a,b,d){return u(function*(){if(a.search(M)===-1)return a;var c=sa(a,d);return qa(c).reduce((e,f)=>e.then(g=>ra(g,f,b,d)),Promise.resolve(c))})};function O(a,b,d){return u(function*(){var c,e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield N(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function ta(a,b){return u(function*(){(yield O("background",a,b))||(yield O("background-image",a,b));(yield O("mask",a,b))||(yield O("-webkit-mask",a,b))||(yield O("mask-image",a,b))||(yield O("-webkit-mask-image",a,b))})}
+function ua(a,b){return u(function*(){var d=D(a,HTMLImageElement);if(d&&!F(a.src)||D(a,SVGImageElement)&&!F(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield I(c,J[K(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.h?(...h)=>{try{f(b.h(...h))}catch(l){g(l)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function va(a,b){return u(function*(){var d=w(a.childNodes).map(c=>P(c,b));yield Promise.all(d).then(()=>a)})}function P(a,b){return u(function*(){D(a,Element)&&(yield ta(a,b),yield ua(a,b),yield va(a,b))})};const Q={};function R(a){return u(function*(){var b=Q[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return Q[a]=b})}function S(a,b){return u(function*(){var d=a.cssText,c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>u(function*(){var g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return G(g,b.l,({result:h})=>{d=d.replace(f,`url(${h})`);return[f,h]})}));return Promise.all(e).then(()=>d)})}
+function T(a){if(a==null)return[];var b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function wa(a,b){return u(function*(){var d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let h=g+1;f=R(f.href).then(l=>S(l,b)).then(l=>T(l).forEach(p=>{try{e.insertRule(p,p.startsWith("@import")?h+=1:e.cssRules.length)}catch(x){}})).catch(()=>{});c.push(f)}})}catch(f){let g=a.find(h=>h.href==null)||document.styleSheets[0];e.href!=null&&c.push(R(e.href).then(h=>S(h,b)).then(h=>T(h).forEach(l=>{g.insertRule(l,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function xa(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(M)!==-1)}function ya(a,b){return u(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=yield wa(w(a.ownerDocument.styleSheets),b);return xa(d)})}
+function za(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}var d=new Set;b(a);return d}function Aa(a,b){return u(function*(){var d=yield ya(a,b),c=za(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>N(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function Ba(a,b){return u(function*(){var d=b.m!=null?b.m:b.A?null:yield Aa(a,b);if(d){let c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function Ca(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield L(a,b,!0);yield Ba(e,b);yield P(e,b);v(e,b);return yield ca(e,d,c)})}
+function Da(a,b={}){return u(function*(){var {width:d,height:c}=B(a,b),e=yield Ca(a,b);e=yield C(e);var f=document.createElement("canvas"),g=f.getContext("2d"),h=b.I||window.devicePixelRatio||1,l=b.j||d,p=b.i||c;f.width=l*h;f.height=p*h;!b.L&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384));
+f.style.width=`${l}`;f.style.height=`${p}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function Ea(a,b={}){return u(function*(){return(yield Da(a,b)).toDataURL()})};const Fa=["gemini.google.com","corp.google.com","proxy.googlers.com"];function V(a){a=Number(a.replace(/px$/,""));return Number.isFinite(a)?a:0}function W(){return document.body.querySelectorAll('[class*="animate"]').length>0}function X(a,b){var d=document.createElement("canvas");d.width=a;d.height=b;return d.toDataURL("image/png")}const Y=X(1,1);
+function Z(a,b){return u(function*(){var d=Math.max(b?b.width:a.offsetWidth,1),c=Math.max(b?b.height:a.offsetHeight,1),e=HTMLCanvasElement.prototype.toDataURL;b&&(HTMLCanvasElement.prototype.toDataURL=function(f,g){var h;if(h=this.isConnected&&a.contains(this)){{let n=this.getBoundingClientRect();if(n.width===0||n.height===0)h=!1;else if(window.getComputedStyle(this).position==="fixed")h=n.bottom>0&&n.top<b.height&&n.right>0&&n.left<b.width;else{h=a.getBoundingClientRect();var l=n.top-h.top,p=n.left-
+h.left,x=n.right-h.left;h=n.bottom-h.top>b.scrollTop&&l<b.scrollTop+b.height&&x>b.scrollLeft&&p<b.scrollLeft+b.width}}h=!h}return h?"data:,":e.call(this,f,g)});try{let f=window.getComputedStyle(a),g=b?`${V(f.marginTop)-b.scrollTop}px`:void 0,h=b?`${V(f.marginLeft)-b.scrollLeft}px`:void 0,l=`${Math.max(a.offsetWidth,d)}px`,p,x=`${Math.max(a.offsetHeight,c+((p=b==null?void 0:b.scrollTop)!=null?p:0))}px`;return yield Ea(a,Object.assign({},{width:d,height:c,j:d,i:c},b?{style:{width:l,height:x,marginTop:g,
+marginLeft:h,marginBlockStart:g,marginInlineStart:h}}:{},{A:!0,filter:n=>{if(n.tagName==="IMG"){let U=n.getAttribute("src");if(!U||U.trim()===""||n.style.display==="none")return!1}return!0},o:Y,h:()=>Y}))}catch(f){return X(d,c)}finally{HTMLCanvasElement.prototype.toDataURL=e}})}
+function Ga(){return u(function*(){var a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ha(a){return u(function*(){var b={width:window.innerWidth||document.documentElement.clientWidth||document.body.offsetWidth,height:window.innerHeight||document.documentElement.clientHeight||document.body.offsetHeight,scrollTop:window.scrollY||document.documentElement.scrollTop||document.body.scrollTop||0,scrollLeft:window.scrollX||document.documentElement.scrollLeft||document.body.scrollLeft||0},d=document.body;if(W()){let c=yield Ga();d=c;document.body.appendChild(c)}b=yield Z(d,b);W()&&
+document.body.removeChild(d);window.parent.postMessage({type:"SEND_SCREENSHOT",image:b,topOffset:0},a.origin)})}function Ia(a){return u(function*(){var b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}window.addEventListener("message",a=>u(function*(){if(Fa.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ha(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ia(a)))}}));
+})();</script><script data-bard-client-injected="true">(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script data-bard-client-injected="true">
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script ws-interception-config="{&quot;parentOrigin&quot;:&quot;https://gemini.google.com&quot;,&quot;proxiedDomains&quot;:[]}" data-bard-client-injected="true">(function(){'use strict';var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,d,e){if(b==Array.prototype||b==Object.prototype)return b;b[d]=e.value;return b};function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var d=0;d<b.length;++d){var e=b[d];if(e&&e.Math==Math)return e}throw Error("Cannot find global object");}var w=v(this);
+function y(b,d){if(d)a:{var e=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var k=b[h];if(!(k in e))break a;e=e[k]}b=b[b.length-1];h=e[b];d=d(h);d!=h&&d!=null&&u(e,b,{configurable:!0,writable:!0,value:d})}}function z(b){function d(h){return b.next(h)}function e(h){return b.throw(h)}return new Promise(function(h,k){function m(n){n.done?h(n.value):Promise.resolve(n.value).then(d,e).then(m,k)}m(b.next())})}y("globalThis",function(b){return b||w});/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+function A(b,d){function e(){}e.prototype=d.prototype;b.i=d.prototype;b.prototype=new e;b.prototype.constructor=b;b.h=function(h,k,m){for(var n=Array(arguments.length-2),p=2;p<arguments.length;p++)n[p-2]=arguments[p];return d.prototype[k].apply(h,n)}};function B(b,d,e="*"){function h(a){if(typeof a==="string")return F.encode(a).buffer;if(a instanceof ArrayBuffer)return a.slice(0);if(ArrayBuffer.isView(a))return a.buffer.slice(a.byteOffset,a.byteOffset+a.byteLength);throw Error("Invalid data type");}function k(a){a=h(a);var f={type:"send",data:new Uint8Array(a)},g;(g=r)==null||g.postMessage(f,[a])}function m(){if(!r)throw Error("Data port not captured yet.");r.onmessage=a=>{if(a.data.type==="message"){a=new MessageEvent("message",{data:G.decode(a.data.data)});
+let f;(f=c.onmessage)==null||f.call(c,a);c.dispatchEvent(a)}}}function n(){if(!t)throw Error("Control port not captured yet.");t.onmessage=a=>{switch(a.data.type){case "open":l=1;var f=new Event("open"),g;(g=c.onopen)==null||g.call(c,f);c.dispatchEvent(f);q.forEach(H=>{k(H)});q=[];break;case "close":g=a.data;l=3;g=new CloseEvent("close",{code:g.code,reason:g.reason,wasClean:g.wasClean});(f=c.onclose)==null||f.call(c,g);c.dispatchEvent(g);break;case "error":l=3;f=new Event("error");let x;(x=c.onerror)==
+null||x.call(c,f);c.dispatchEvent(f)}}}function p(a){return z(function*(){var f=new MessageChannel;t=f.port1;var g=new MessageChannel;r=g.port1;n();m();window.parent.postMessage({type:"websocket_open",portOrdering:["control","data"],url:b,protocols:a||[],connectionId:I},e,[f.port2,g.port2])}())}var c=Reflect.construct(EventTarget,[],new.target);c.CONNECTING=0;c.OPEN=1;c.CLOSING=2;c.CLOSED=3;c.url=b;c.binaryType="arraybuffer";c.protocol="";c.extensions="";var l=0,t=null,r=null,q=[],F=new TextEncoder,
+G=new TextDecoder;c.onopen=null;c.onmessage=null;c.onclose=null;c.onerror=null;Object.defineProperty(c,"readyState",{get:()=>l,enumerable:!0,configurable:!0});Object.defineProperty(c,"bufferedAmount",{get:()=>{var a=0;q.forEach(f=>{a+=typeof f==="string"?f.length:f.byteLength});return a},enumerable:!0,configurable:!0});var I=function(){var a;return((a=globalThis.crypto)==null?0:a.randomUUID)?globalThis.crypto.randomUUID():"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,f=>{var g=Math.random()*
+16|0;return(f==="x"?g:g&3|8).toString(16)})}();c.send=a=>{if(l===1)a instanceof Blob?a.arrayBuffer().then(f=>{k(f)}):k(a);else if(l===0)if(typeof a==="string")q.push(a);else if(a instanceof ArrayBuffer||ArrayBuffer.isView(a))q.push(h(a));else throw Error("Sending Blob is not supported before the connection is open.");else console.debug("WebSocket send called in CLOSING or CLOSED state; ignored.")};c.close=(a=1E3,f="")=>{if(l!==2&&l!==3){l=2;a={type:"close",code:a,reason:f,wasClean:a===1E3};var g;
+(g=t)==null||g.postMessage(a)}};Promise.resolve().then(()=>p(d));return c}A(B,EventTarget);var C=document.currentScript,D=C==null?void 0:C.getAttribute("ws-interception-config");if(!D)throw Error("WebSocket Interceptor: Missing ws-interception-config attribute in the script tag.");var E=JSON.parse(D);if(!E.parentOrigin||typeof E.parentOrigin!=="string")throw Error("WebSocket Interceptor: Invalid parentOrigin in ws-interception-config");
+(function(b){var d=Object.getOwnPropertyDescriptor(window,"WebSocket");if(!d||d.writable||d.configurable)d=Object.assign(function(e,h){try{let k=(new URL(e)).hostname;if(b.proxiedDomains.some(m=>k===m||k.endsWith(`.${m}`)))return new B(e,h,b.parentOrigin)}catch(k){throw window.parent.postMessage({type:"websocket_blocked",url:e,reason:"blocked_invalid_url"},b.parentOrigin),new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");}window.parent.postMessage({type:"websocket_blocked",
+url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMException(`WebSocket connection to '${e}' is not allowed in Canvas.`,"SecurityError");},{CONNECTING:0,OPEN:1,CLOSING:2,CLOSED:3}),Object.defineProperty(window,"WebSocket",{value:d,writable:!1,configurable:!1})})({proxiedDomains:E.proxiedDomains||[],parentOrigin:E.parentOrigin});}).call(this);
+</script><script data-bard-client-injected="true">((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageTransformModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedGenerateImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+  modelInformation.deprecatedImageTransformModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-3-flash-preview","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-3.1-flash-image","imageTransformModelName":"gemini-3-pro-image","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20","gemini-2.5-flash-preview-09-2025"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"],"deprecatedGenerateImageModelNames":["gemini-2.5-flash-image-preview","gemini-2.5-flash-image","gemini-3.1-flash-image-preview"],"deprecatedImageTransformModelNames":["gemini-3-pro-image-preview-11-2025"]})</script><script data-bard-client-injected="true">(function() {
+  const OVERLAY_SELECTOR =
+    'dialog[open], [role="dialog"], [role="alertdialog"], [role="menu"], [role="listbox"], [role="combobox"]';
+
+  function isVisibleOverlay(element) {
+    if (element.closest('[hidden], [aria-hidden="true"], [inert]')) {
+      return false;
+    }
+    if (window.getComputedStyle(element).visibility === 'hidden') {
+      return false;
+    }
+    for (let cur = element; cur; cur = cur.parentElement) {
+      if (window.getComputedStyle(cur).display === 'none') {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  function hasOpenOverlay() {
+    const candidates = document.querySelectorAll(OVERLAY_SELECTOR);
+    for (let i = 0; i < candidates.length; i++) {
+      if (isVisibleOverlay(candidates[i])) {
+        return true;
+      }
+    }
+    try {
+      if (document.querySelector('[popover]:popover-open')) {
+        return true;
+      }
+    } catch (e) {
+      // Ignore engines that do not support :popover-open.
+    }
+    return false;
+  }
+
+  function isNonEmptySearchInput(target) {
+    return (
+      Boolean(target) &&
+      target.tagName === 'INPUT' &&
+      typeof target.type === 'string' &&
+      target.type.toLowerCase() === 'search' &&
+      typeof target.value === 'string' &&
+      target.value.length > 0
+    );
+  }
+
+  function shouldIgnoreEscape(event) {
+    return (
+      event.key !== 'Escape' ||
+      event.altKey ||
+      event.ctrlKey ||
+      event.metaKey ||
+      event.shiftKey ||
+      event.isComposing ||
+      event.repeat ||
+      event.keyCode === 229 ||
+      isNonEmptySearchInput(event.target)
+    );
+  }
+
+  let shouldIgnoreCaptureState = false;
+
+  window.addEventListener(
+    'keydown',
+    function(event) {
+      if (event.key === 'Escape') {
+        shouldIgnoreCaptureState =
+          hasOpenOverlay() || isNonEmptySearchInput(event.target);
+      }
+    },
+    {capture: true},
+  );
+
+  window.addEventListener('keydown', function(event) {
+    if (
+      shouldIgnoreEscape(event) ||
+      event.defaultPrevented ||
+      shouldIgnoreCaptureState
+    ) {
+      return;
+    }
+    const wasBlockedOnCapture = shouldIgnoreCaptureState;
+    queueMicrotask(function() {
+      if (event.defaultPrevented || wasBlockedOnCapture) {
+        return;
+      }
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({'type': 'escapeKey'}, '*');
+      }
+    });
+  });
+})();</script><script data-bard-client-injected="true">(function() {
+  function normalizeSlug(str) {
+    try {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^p{L}p{N}s_-]/gu, '')
+        .replace(/s+/g, '-');
+    } catch (e) {
+      return str
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9s_-]/g, '')
+        .replace(/s+/g, '-');
+    }
+  }
+
+  function findTargetElement(hash) {
+    if (!hash || hash === '#') {
+      return null;
+    }
+    const rawId = hash.startsWith('#') ? hash.slice(1) : hash;
+    let decodedId = rawId;
+    try {
+      decodedId = decodeURIComponent(rawId);
+    } catch (e) {
+      // Ignore URI malformed errors.
+    }
+
+    // 1. Direct ID match (raw and decoded).
+    let target = document.getElementById(rawId) || document.getElementById(decodedId);
+    if (target) {
+      return target;
+    }
+
+    // 2. Name attribute match (<a name="...">).
+    try {
+      if (typeof CSS !== 'undefined' && CSS.escape) {
+        target =
+          document.querySelector('[name="' + CSS.escape(rawId) + '"]') ||
+          document.querySelector('[name="' + CSS.escape(decodedId) + '"]');
+      } else {
+        const namedElements = document.getElementsByName(rawId);
+        if (namedElements && namedElements.length > 0) {
+          return namedElements[0];
+        }
+      }
+    } catch (e) {
+      // Ignore querySelector syntax errors.
+    }
+    if (target) {
+      return target;
+    }
+
+    // 3. Match heading text by slug (for Markdown TOCs where headings lack explicit IDs).
+    const targetSlug = normalizeSlug(decodedId);
+    if (targetSlug) {
+      for (const heading of document.querySelectorAll('h1, h2, h3, h4, h5, h6')) {
+        if (normalizeSlug(heading.textContent || '') === targetSlug) {
+          return heading;
+        }
+      }
+    }
+
+    return null;
+  }
+
+  document.addEventListener('click', function(event) {
+    const target = event.target;
+    const anchor = target && typeof target.closest === 'function' ? target.closest('a') : null;
+    if (!anchor) {
+      return;
+    }
+
+    const href = anchor.getAttribute('href');
+    if (
+      !href ||
+      href.trim().toLowerCase().startsWith('javascript:') ||
+      anchor.hasAttribute('download')
+    ) {
+      return;
+    }
+
+    // Check if the link is an in-page hash / anchor link.
+    if (href.startsWith('#')) {
+      event.preventDefault();
+      const targetElement = findTargetElement(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+      }
+      return;
+    }
+
+    // Check if the URL has the same origin/pathname but with a hash.
+    try {
+      const url = new URL(anchor.href, window.location.href);
+      if (
+        url.hash &&
+        url.origin === window.location.origin &&
+        url.pathname === window.location.pathname
+      ) {
+        event.preventDefault();
+        const targetElement = findTargetElement(url.hash);
+        if (targetElement) {
+          targetElement.scrollIntoView({behavior: 'smooth', block: 'start'});
+        }
+        return;
+      }
+    } catch (e) {
+      // Fall through if URL parsing fails.
+    }
+
+    // For all external or full navigation links, prevent iframe-level navigation
+    // (which breaks in AGSA WebView or sandboxed iframes) and ensure they open
+    // safely in a new tab/window.
+    if (anchor.target !== '_blank') {
+      event.preventDefault();
+      window.open(anchor.href, '_blank', 'noopener,noreferrer');
+    }
+  }, {capture: true});
+})();</script><script data-bard-client-injected="true">(function(){'use strict';function a(){window.parent.postMessage({type:"interaction"},"*")}window.addEventListener("click",a,{capture:!0,passive:!0});window.addEventListener("touchstart",a,{capture:!0,passive:!0});window.addEventListener("keydown",a,{capture:!0,passive:!0});}).call(this);
+</script><script data-bard-client-injected="true">(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Góndola Express - Pedido por Voz</title>
+    <style>
+        /* =========================================================
+           ESTILOS 100% AUTOCONTENIDOS (FUNCIONA ONLINE Y OFFLINE)
+           ========================================================= */
+        :root {
+            --bg-app: #f1f5f9;
+            --bg-card: #ffffff;
+            --bg-subtle: #f8fafc;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --emerald: #10b981;
+            --emerald-dark: #059669;
+            --amber: #f59e0b;
+            --amber-dark: #d97706;
+            --red: #ef4444;
+            --red-dark: #dc2626;
+            --wa-green: #25D366;
+            --wa-hover: #1ebe5d;
+            --tg-blue: #0088cc;
+            --tg-hover: #0077b3;
+            --slate-dark: #0f172a;
+            --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+            --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.12);
+            --shadow-lg: 0 12px 28px rgba(15, 23, 42, 0.22);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-app);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 96px;
+            line-height: 1.4;
+        }
+
+        button, input, select {
+            font-family: inherit;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+            transition: transform 0.12s ease, background-color 0.15s ease, opacity 0.15s ease;
+        }
+
+        button:active {
+            transform: scale(0.97);
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* =========================================================
+           ENCABEZADO SUPERIOR
+           ========================================================= */
+        .app-header {
+            background-color: var(--slate-dark);
+            color: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 30;
+            box-shadow: var(--shadow-md);
+        }
+
+        .header-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand-icon {
+            background-color: var(--emerald);
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .brand-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+        }
+
+        .brand-subtitle {
+            font-size: 0.75rem;
+            color: #94a3b8;
+            font-weight: 500;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .icon-btn {
+            background-color: #1e293b;
+            color: #e2e8f0;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .icon-btn:hover {
+            background-color: #334155;
+        }
+
+        .alarm-dot {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            width: 9px;
+            height: 9px;
+            background-color: var(--amber);
+            border-radius: 50%;
+            animation: ping 1.4s infinite;
+        }
+
+        @keyframes ping {
+            0% { transform: scale(1); opacity: 1; }
+            75%, 100% { transform: scale(2); opacity: 0; }
+        }
+
+        .download-btn {
+            background-color: var(--emerald-dark);
+            color: #ffffff;
+            padding: 10px 13px;
+            border-radius: 12px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .download-btn:hover {
+            background-color: var(--emerald);
+        }
+
+        /* =========================================================
+           CONTENEDOR PRINCIPAL Y TARJETAS
+           ========================================================= */
+        .main-container {
+            max-width: 760px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            flex: 1;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            border-radius: 18px;
+            border: 1px solid var(--border-color);
+            padding: 16px;
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* =========================================================
+           PANEL DE VOZ Y LECTURA
+           ========================================================= */
+        .voice-controls-row {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        @media (min-width: 600px) {
+            .voice-controls-row {
+                flex-direction: row;
+                align-items: stretch;
+            }
+        }
+
+        .mic-btn {
+            flex: 1;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #ffffff;
+            padding: 14px 18px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-align: left;
+            box-shadow: var(--shadow-md);
+        }
+
+        .mic-btn.listening {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            animation: pulse-ring 1.6s infinite cubic-bezier(0.66, 0, 0, 1);
+        }
+
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.65); }
+            70% { box-shadow: 0 0 0 14px rgba(239, 68, 68, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+
+        .mic-circle {
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .mic-title {
+            font-size: 1rem;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .mic-sub {
+            font-size: 0.75rem;
+            color: #dbeafe;
+            margin-top: 2px;
+        }
+
+        .sound-waves {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            height: 22px;
+        }
+
+        .wave-bar {
+            width: 4px;
+            background-color: #ffffff;
+            border-radius: 99px;
+            animation: sound-wave 0.75s ease-in-out infinite alternate;
+        }
+        .wave-bar:nth-child(2) { animation-delay: 0.18s; }
+        .wave-bar:nth-child(3) { animation-delay: 0.36s; }
+        .wave-bar:nth-child(4) { animation-delay: 0.1s; }
+
+        @keyframes sound-wave {
+            0% { height: 6px; }
+            100% { height: 22px; }
+        }
+
+        .speak-btn {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #ffffff;
+            padding: 14px 20px;
+            border-radius: 16px;
+            font-size: 0.95rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .speak-btn.speaking {
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+        }
+
+        /* Caja de transcripción y pruebas rápidas */
+        .feedback-box {
+            margin-top: 12px;
+            background-color: var(--bg-subtle);
+            border: 1px solid var(--border-color);
+            border-radius: 14px;
+            padding: 10px 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .transcript-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .transcript-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            overflow: hidden;
+            flex: 1;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #94a3b8;
+            flex-shrink: 0;
+        }
+
+        .status-dot.active {
+            background-color: #ef4444;
+        }
+
+        .status-dot.ready {
+            background-color: #10b981;
+        }
+
+        .transcript-text {
+            font-size: 0.85rem;
+            color: #475569;
+            font-style: italic;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .continuous-toggle {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #475569;
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            padding: 5px 9px;
+            border-radius: 8px;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .diagnostic-banner {
+            font-size: 0.78rem;
+            padding: 8px 10px;
+            border-radius: 10px;
+            font-weight: 600;
+            line-height: 1.35;
+        }
+
+        .diagnostic-warn {
+            background-color: #fef3c7;
+            color: #92400e;
+            border: 1px solid #fde68a;
+        }
+
+        .diagnostic-error {
+            background-color: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #fecaca;
+        }
+
+        .quick-chips-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px;
+            padding-top: 8px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .quick-label {
+            font-size: 0.68rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #94a3b8;
+            margin-right: 2px;
+        }
+
+        .quick-chip {
+            font-size: 0.74rem;
+            font-weight: 600;
+            color: #334155;
+            background-color: #ffffff;
+            border: 1px solid #cbd5e1;
+            padding: 5px 10px;
+            border-radius: 8px;
+        }
+
+        .quick-chip:hover {
+            background-color: #eff6ff;
+            border-color: #93c5fd;
+            color: #1d4ed8;
+        }
+
+        /* =========================================================
+           FORMULARIO MANUAL RÁPIDO
+           ========================================================= */
+        .manual-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        @media (min-width: 600px) {
+            .manual-form {
+                flex-direction: row;
+            }
+        }
+
+        .text-input {
+            flex: 1;
+            width: 100%;
+            padding: 13px 15px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+            background-color: var(--bg-subtle);
+            border: 1.5px solid #cbd5e1;
+            border-radius: 13px;
+            outline: none;
+        }
+
+        .text-input:focus {
+            background-color: #ffffff;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+
+        .form-actions-group {
+            display: flex;
+            gap: 8px;
+        }
+
+        .qty-stepper {
+            display: flex;
+            align-items: center;
+            background-color: var(--bg-subtle);
+            border: 1.5px solid #cbd5e1;
+            border-radius: 13px;
+            overflow: hidden;
+        }
+
+        .stepper-btn {
+            width: 40px;
+            height: 46px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stepper-btn:hover {
+            background-color: #e2e8f0;
+        }
+
+        .qty-input {
+            width: 54px;
+            height: 46px;
+            border: none;
+            background: transparent;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--text-main);
+            outline: none;
+        }
+
+        .submit-btn {
+            flex: 1;
+            background-color: var(--slate-dark);
+            color: #ffffff;
+            padding: 0 20px;
+            height: 49px;
+            border-radius: 13px;
+            font-size: 0.95rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .submit-btn:hover {
+            background-color: #1e293b;
+        }
+
+        /* =========================================================
+           BARRA DE RESUMEN Y FILTROS
+           ========================================================= */
+        .summary-bar {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .summary-top {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .badges-group {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            font-size: 0.78rem;
+            font-weight: 800;
+            padding: 6px 12px;
+            border-radius: 999px;
+        }
+
+        .badge-blue {
+            background-color: #dbeafe;
+            color: #1e40af;
+        }
+
+        .badge-emerald {
+            background-color: #d1fae5;
+            color: #065f46;
+        }
+
+        .list-tools {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .tool-btn {
+            font-size: 0.76rem;
+            font-weight: 700;
+            padding: 7px 12px;
+            border-radius: 11px;
+            background-color: #ffffff;
+            border: 1px solid #cbd5e1;
+            color: #334155;
+        }
+
+        .tool-btn-danger {
+            color: #dc2626;
+            border-color: #fecaca;
+            background-color: #fef2f2;
+        }
+
+        .filter-tabs {
+            display: inline-flex;
+            background-color: #e2e8f0;
+            padding: 4px;
+            border-radius: 12px;
+            align-self: flex-start;
+        }
+
+        .filter-tab {
+            padding: 6px 14px;
+            border-radius: 9px;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: #475569;
+        }
+
+        .filter-tab.active {
+            background-color: #ffffff;
+            color: var(--text-main);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* =========================================================
+           TARJETAS DE PRODUCTOS
+           ========================================================= */
+        .product-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border: 1.5px solid var(--border-color);
+            border-radius: 16px;
+            padding: 12px 14px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            box-shadow: var(--shadow-sm);
+            transition: opacity 0.2s ease, background-color 0.2s ease;
+        }
+
+        .product-card.completed {
+            background-color: #f8fafc;
+            border-color: #cbd5e1;
+            opacity: 0.72;
+        }
+
+        .product-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .check-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 10px;
+            border: 2px solid #cbd5e1;
+            background-color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: transparent;
+        }
+
+        .product-card.completed .check-btn {
+            background-color: var(--emerald);
+            border-color: var(--emerald);
+            color: #ffffff;
+        }
+
+        .product-info {
+            min-width: 0;
+            flex: 1;
+        }
+
+        .product-name {
+            font-size: 1rem;
+            font-weight: 800;
+            color: var(--text-main);
+            word-break: break-word;
+        }
+
+        .product-card.completed .product-name {
+            text-decoration: line-through;
+            color: #64748b;
+        }
+
+        .product-meta {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .product-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .card-qty-box {
+            display: flex;
+            align-items: center;
+            background-color: #f1f5f9;
+            border-radius: 11px;
+            padding: 2px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card-qty-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-qty-btn:hover {
+            background-color: #e2e8f0;
+        }
+
+        .card-qty-val {
+            min-width: 34px;
+            text-align: center;
+            font-size: 0.98rem;
+            font-weight: 800;
+            color: #1d4ed8;
+        }
+
+        .delete-item-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            background-color: #fef2f2;
+            color: #dc2626;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .delete-item-btn:hover {
+            background-color: #fee2e2;
+        }
+
+        /* Estado vacío */
+        .empty-state {
+            background-color: #ffffff;
+            border: 2px dashed #cbd5e1;
+            border-radius: 18px;
+            padding: 36px 20px;
+            text-align: center;
+        }
+
+        .empty-icon {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            background-color: #f1f5f9;
+            color: #94a3b8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px auto;
+        }
+
+        .empty-title {
+            font-size: 1rem;
+            font-weight: 800;
+            color: #334155;
+        }
+
+        .empty-desc {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 6px;
+        }
+
+        /* =========================================================
+           BARRA INFERIOR FIJA (WHATSAPP / TELEGRAM)
+           ========================================================= */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(8px);
+            border-top: 1px solid var(--border-color);
+            padding: 12px 16px;
+            z-index: 30;
+            box-shadow: 0 -4px 16px rgba(15, 23, 42, 0.06);
+        }
+
+        .bottom-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .share-btn {
+            flex: 1;
+            color: #ffffff;
+            padding: 13px 16px;
+            border-radius: 15px;
+            font-size: 0.95rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-wa {
+            background-color: var(--wa-green);
+        }
+        .btn-wa:hover {
+            background-color: var(--wa-hover);
+        }
+
+        .btn-tg {
+            background-color: var(--tg-blue);
+        }
+        .btn-tg:hover {
+            background-color: var(--tg-hover);
+        }
+
+        /* =========================================================
+           TARJETA FLOTANTE DE PROGRESO DE LECTURA HÍBRIDA
+           ========================================================= */
+        .reading-card {
+            position: fixed;
+            bottom: 84px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92vw;
+            max-width: 480px;
+            background-color: rgba(15, 23, 42, 0.96);
+            color: #ffffff;
+            padding: 14px 16px;
+            border-radius: 18px;
+            border: 1px solid #334155;
+            box-shadow: var(--shadow-lg);
+            z-index: 45;
+        }
+
+        .reading-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .reading-badge {
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background-color: var(--amber);
+            color: #0f172a;
+            padding: 3px 10px;
+            border-radius: 999px;
+        }
+
+        .reading-controls {
+            display: flex;
+            gap: 6px;
+        }
+
+        .reading-next-btn {
+            font-size: 0.75rem;
+            font-weight: 700;
+            background-color: #1e293b;
+            color: #fcd34d;
+            border: 1px solid #334155;
+            padding: 6px 11px;
+            border-radius: 10px;
+        }
+
+        .reading-stop-btn {
+            font-size: 0.75rem;
+            font-weight: 700;
+            background-color: var(--red);
+            color: #ffffff;
+            padding: 6px 11px;
+            border-radius: 10px;
+        }
+
+        .reading-text {
+            font-size: 1.02rem;
+            font-weight: 800;
+            line-height: 1.35;
+            color: #ffffff;
+        }
+
+        /* =========================================================
+           TOAST Y MODALES
+           ========================================================= */
+        .toast {
+            position: fixed;
+            top: 74px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-10px);
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 11px 18px;
+            border-radius: 14px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            box-shadow: var(--shadow-lg);
+            z-index: 60;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.22s ease, transform 0.22s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            max-width: 90vw;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(15, 23, 42, 0.62);
+            backdrop-filter: blur(3px);
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        .modal-box {
+            background-color: #ffffff;
+            border-radius: 22px;
+            width: 100%;
+            max-width: 460px;
+            padding: 22px;
+            box-shadow: var(--shadow-lg);
+            max-height: 86vh;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 12px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .modal-title {
+            font-size: 1.08rem;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        .close-modal-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 10px;
+            background-color: #f1f5f9;
+            color: #475569;
+            font-weight: 800;
+        }
+
+        .help-block {
+            padding: 12px;
+            border-radius: 14px;
+            margin-bottom: 10px;
+            font-size: 0.82rem;
+        }
+
+        .help-blue { background-color: #eff6ff; color: #1e3a8a; }
+        .help-amber { background-color: #fffbeb; color: #78350f; }
+        .help-emerald { background-color: #ecfdf5; color: #064e3b; }
+        .help-red { background-color: #fef2f2; color: #7f1d1d; }
+        .help-purple { background-color: #faf5ff; color: #581c87; }
+
+        .help-block strong {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 0.86rem;
+        }
+
+        .help-block ul {
+            padding-left: 18px;
+        }
+
+        .field-group {
+            margin-bottom: 14px;
+        }
+
+        .field-label {
+            display: block;
+            font-size: 0.84rem;
+            font-weight: 800;
+            color: #334155;
+            margin-bottom: 6px;
+        }
+
+        .field-hint {
+            font-size: 0.74rem;
+            color: #64748b;
+            margin-top: 4px;
+        }
+
+        .alarm-card {
+            background-color: #fffbeb;
+            border: 1px solid #fde68a;
+            border-radius: 14px;
+            padding: 12px;
+            margin-bottom: 14px;
+        }
+
+        .alarm-row {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .select-input {
+            flex: 1;
+            padding: 9px 12px;
+            border-radius: 10px;
+            border: 1px solid #fcd34d;
+            background-color: #ffffff;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .modal-footer-btns {
+            display: flex;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .btn-full {
+            flex: 1;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            font-weight: 800;
+            text-align: center;
+        }
+
+        .btn-secondary {
+            background-color: #f1f5f9;
+            color: #334155;
+        }
+
+        .btn-primary-dark {
+            background-color: var(--slate-dark);
+            color: #ffffff;
+        }
+
+        .btn-emerald {
+            background-color: var(--emerald-dark);
+            color: #ffffff;
+        }
+
+        .btn-danger {
+            background-color: var(--red-dark);
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ENCABEZADO SUPERIOR -->
+    <header class="app-header">
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-icon" aria-hidden="true">
+                    <svg width="22" height="22" fill="none" stroke="#ffffff" stroke-width="2.3" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <div class="brand-title">Góndola Express</div>
+                    <div class="brand-subtitle">Reposición rápida por voz</div>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button type="button" id="btnHelp" class="icon-btn" title="Guía de comandos de voz" aria-label="Ayuda">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                </button>
+                <button type="button" id="btnSettings" class="icon-btn" title="Configuración y alertas" aria-label="Configuración">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    <span id="alarmBadge" class="alarm-dot hidden"></span>
+                </button>
+                <button type="button" id="btnDownload" class="download-btn" title="Descargar aplicación HTML completa">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                    <span>Descargar App</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="main-container">
+
+        <!-- PANEL DE CONTROL DE VOZ -->
+        <section class="card">
+            <div class="voice-controls-row">
+                <button type="button" id="micBtn" class="mic-btn">
+                    <div class="mic-circle">
+                        <svg width="22" height="22" fill="none" stroke="#ffffff" stroke-width="2.3" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div id="micBtnTitle" class="mic-title">Activar Comando de Voz</div>
+                        <div id="micBtnSub" class="mic-sub">Ej: "Toalla sanitaria 5, jugo campestre 10"</div>
+                    </div>
+                    <div id="soundWaves" class="sound-waves hidden">
+                        <span class="wave-bar"></span>
+                        <span class="wave-bar"></span>
+                        <span class="wave-bar"></span>
+                        <span class="wave-bar"></span>
+                    </div>
+                </button>
+
+                <button type="button" id="speakBtn" class="speak-btn">
+                    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
+                    </svg>
+                    <span id="speakBtnText">Leer Pedido</span>
+                </button>
+            </div>
+
+            <div class="feedback-box">
+                <div class="transcript-row">
+                    <div class="transcript-left">
+                        <span id="voiceStatusDot" class="status-dot ready"></span>
+                        <span id="voiceTranscript" class="transcript-text">🗣️ "Doña latón 5"</span>
+                    </div>
+                    <label class="continuous-toggle">
+                        <input type="checkbox" id="continuousMode" checked="">
+                        <span>Continuo</span>
+                    </label>
+                </div>
+
+                <div id="voiceDiagnosticBanner" class="diagnostic-banner diagnostic-warn hidden">Aviso: Estás en una vista previa embebida. Si el micrófono está bloqueado aquí, toca "Descargar App" arriba y abre el archivo en Google Chrome.</div>
+
+                <div class="quick-chips-row">
+                    <span class="quick-label">Prueba rápida:</span>
+                    <button type="button" class="quick-chip" data-voice-sample="toalla sanitaria 5, jugo campestre 10">
+                        + "toalla sanitaria 5, jugo campestre 10"
+                    </button>
+                    <button type="button" class="quick-chip" data-voice-sample="Leer pedido">
+                        🔊 "Leer pedido"
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULARIO MANUAL RÁPIDO -->
+        <section class="card">
+            <form id="addForm" class="manual-form">
+                <input type="text" id="productName" class="text-input" placeholder="Nombre del producto (ej. Jugo Néctar Manzana)" required="">
+                <div class="form-actions-group">
+                    <div class="qty-stepper">
+                        <button type="button" id="btnFormQtyMinus" class="stepper-btn" title="Restar 1">−</button>
+                        <input type="number" id="productQty" class="qty-input" min="1" max="9999" value="1" required="">
+                        <button type="button" id="btnFormQtyPlus" class="stepper-btn" title="Sumar 1">+</button>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>+ Agregar</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- RESUMEN Y FILTROS -->
+        <section class="summary-bar">
+            <div class="summary-top">
+                <div class="badges-group">
+                    <span class="badge badge-blue">Productos: <span id="totalItemsCount">3</span></span>
+                    <span class="badge badge-emerald">Unidades: <span id="totalUnitsCount">16</span></span>
+                </div>
+                <div class="list-tools">
+                    <button type="button" id="btnCopyList" class="tool-btn">Copiar texto</button>
+                    <button type="button" id="btnClearAll" class="tool-btn tool-btn-danger">Borrar todo</button>
+                </div>
+            </div>
+
+            <div class="filter-tabs">
+                <button type="button" class="filter-tab active" data-filter="all">Todos</button>
+                <button type="button" class="filter-tab" data-filter="pending">Pendientes</button>
+                <button type="button" class="filter-tab" data-filter="completed">Listos</button>
+            </div>
+        </section>
+
+        <!-- LISTA DE PRODUCTOS -->
+        <section id="productListContainer" class="product-list"><div class="product-card "><div class="product-left"><button type="button" class="check-btn" data-action="toggle" data-id="item_1795056431021_1332" title="Marcar recogido"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg></button><div class="product-info"><div class="product-name">Doña latón</div><div class="product-meta">⏳ Pendiente de recoger</div></div></div><div class="product-right"><div class="card-qty-box"><button type="button" class="card-qty-btn" data-action="minus" data-id="item_1795056431021_1332" title="Restar 1">−</button><span class="card-qty-val">5</span><button type="button" class="card-qty-btn" data-action="plus" data-id="item_1795056431021_1332" title="Sumar 1">+</button></div><button type="button" class="delete-item-btn" data-action="delete" data-id="item_1795056431021_1332" title="Eliminar producto"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg></button></div></div><div class="product-card "><div class="product-left"><button type="button" class="check-btn" data-action="toggle" data-id="item_1795056422856_7437" title="Marcar recogido"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg></button><div class="product-info"><div class="product-name">Pollo</div><div class="product-meta">⏳ Pendiente de recoger</div></div></div><div class="product-right"><div class="card-qty-box"><button type="button" class="card-qty-btn" data-action="minus" data-id="item_1795056422856_7437" title="Restar 1">−</button><span class="card-qty-val">6</span><button type="button" class="card-qty-btn" data-action="plus" data-id="item_1795056422856_7437" title="Sumar 1">+</button></div><button type="button" class="delete-item-btn" data-action="delete" data-id="item_1795056422856_7437" title="Eliminar producto"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg></button></div></div><div class="product-card "><div class="product-left"><button type="button" class="check-btn" data-action="toggle" data-id="item_1795056414466_8492" title="Marcar recogido"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg></button><div class="product-info"><div class="product-name">Galleta</div><div class="product-meta">⏳ Pendiente de recoger</div></div></div><div class="product-right"><div class="card-qty-box"><button type="button" class="card-qty-btn" data-action="minus" data-id="item_1795056414466_8492" title="Restar 1">−</button><span class="card-qty-val">5</span><button type="button" class="card-qty-btn" data-action="plus" data-id="item_1795056414466_8492" title="Sumar 1">+</button></div><button type="button" class="delete-item-btn" data-action="delete" data-id="item_1795056414466_8492" title="Eliminar producto"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg></button></div></div></section>
+
+        <!-- ESTADO VACÍO -->
+        <div id="emptyState" class="empty-state hidden">
+            <div class="empty-icon">
+                <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+            </div>
+            <div id="emptyStateTitle" class="empty-title">Tu lista de relleno está vacía</div>
+            <p id="emptyStateDesc" class="empty-desc">
+                Presiona el micrófono y dicta varios productos seguidos, por ejemplo:<br>
+                <strong style="color:#2563eb;">"Toalla sanitaria 5, jugo campestre 10"</strong>
+            </p>
+        </div>
+    </main>
+
+    <!-- BARRA INFERIOR FIJA WHATSAPP Y TELEGRAM -->
+    <footer class="bottom-bar">
+        <div class="bottom-inner">
+            <button type="button" id="btnWhatsApp" class="share-btn btn-wa">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2.546 20.2c-.151.512.326.989.838.838l3.032-.892A9.955 9.955 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"></path>
+                </svg>
+                <span>WhatsApp</span>
+            </button>
+            <button type="button" id="btnTelegram" class="share-btn btn-tg">
+                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"></path>
+                </svg>
+                <span>Telegram</span>
+            </button>
+        </div>
+    </footer>
+
+    <!-- TARJETA FLOTANTE DE PROGRESO DE LECTURA -->
+    <div id="readingProgressCard" class="reading-card hidden">
+        <div class="reading-top">
+            <span id="readingStepBadge" class="reading-badge">Leyendo 5 de 5</span>
+            <div class="reading-controls">
+                <button type="button" id="btnReadingNext" class="reading-next-btn">Siguiente ⏭</button>
+                <button type="button" id="btnReadingStop" class="reading-stop-btn">Detener</button>
+            </div>
+        </div>
+        <div id="readingCurrentText" class="reading-text">Fin del pedido.</div>
+    </div>
+
+    <!-- NOTIFICACIÓN TOAST -->
+    <div id="toast" class="toast">
+        <span id="toastIcon">✅</span>
+        <span id="toastMessage">Agregado: Doña latón (5)</span>
+    </div>
+
+    <!-- MODAL CONFIRMAR BORRADO -->
+    <div id="confirmClearModal" class="modal-backdrop hidden">
+        <div class="modal-box" style="text-align:center;">
+            <div class="modal-title" style="margin-bottom:8px;">¿Borrar toda la lista?</div>
+            <p style="font-size:0.86rem; color:#64748b;">
+                Se eliminarán todos los productos del pedido actual. También puedes decir <strong>"Confirmar"</strong>.
+            </p>
+            <div class="modal-footer-btns">
+                <button type="button" id="btnCancelClear" class="btn-full btn-secondary">Cancelar</button>
+                <button type="button" id="btnConfirmClear" class="btn-full btn-danger">Sí, borrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL AYUDA -->
+    <div id="helpModal" class="modal-backdrop hidden">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="modal-title">🎙️ Comandos de Voz Disponibles</div>
+                <button type="button" class="close-modal-btn" data-close-modal="helpModal">✕</button>
+            </div>
+
+            <div class="help-block help-blue">
+                <strong>➕ Dictar uno o varios productos seguidos:</strong>
+                <ul>
+                    <li>"Toalla sanitaria 5, jugo campestre 10"</li>
+                    <li>"Leche 3 pan bimbo 2 galletas cuatro"</li>
+                    <li>"Agregar Jugo Néctar Manzana cantidad 5"</li>
+                </ul>
+            </div>
+
+            <div class="help-block help-amber">
+                <strong>🔊 Escuchar el pedido pendiente:</strong>
+                <ul>
+                    <li>"Leer pedido" / "Leer lista"</li>
+                </ul>
+            </div>
+
+            <div class="help-block help-emerald">
+                <strong>✅ Marcar producto recogido:</strong>
+                <ul>
+                    <li>"Listo Jugo Néctar Manzana"</li>
+                    <li>"Recogido Toalla sanitaria"</li>
+                </ul>
+            </div>
+
+            <div class="help-block help-red">
+                <strong>🗑️ Borrar productos o reiniciar:</strong>
+                <ul>
+                    <li>"Borrar Jugo Néctar Manzana"</li>
+                    <li>"Borrar todo" (luego di "Confirmar")</li>
+                </ul>
+            </div>
+
+            <div class="help-block help-purple">
+                <strong>📲 Enviar pedido a bodega:</strong>
+                <ul>
+                    <li>"Enviar a WhatsApp"</li>
+                    <li>"Enviar a Telegram"</li>
+                </ul>
+            </div>
+
+            <button type="button" class="btn-full btn-primary-dark" style="width:100%; margin-top:8px;" data-close-modal="helpModal">Entendido</button>
+        </div>
+    </div>
+
+    <!-- MODAL CONFIGURACIÓN Y ALERTAS -->
+    <div id="settingsModal" class="modal-backdrop hidden">
+        <div class="modal-box">
+            <div class="modal-header">
+                <div class="modal-title">⚙️ Configuración y Alertas</div>
+                <button type="button" class="close-modal-btn" data-close-modal="settingsModal">✕</button>
+            </div>
+
+            <div class="field-group">
+                <label for="waPhoneInput" class="field-label">Teléfono WhatsApp de bodega / compañero</label>
+                <input type="tel" id="waPhoneInput" class="text-input" placeholder="Ej: 50588889999 (con código de país)">
+                <div class="field-hint">Si lo dejas vacío, WhatsApp te permitirá elegir el contacto cada vez.</div>
+            </div>
+
+            <div class="field-group">
+                <label for="customHeaderInput" class="field-label">Encabezado del mensaje enviado</label>
+                <input type="text" id="customHeaderInput" class="text-input" placeholder="Ej: 📦 PEDIDO RELLENO GÓNDOLA">
+            </div>
+
+            <div class="alarm-card">
+                <strong style="font-size:0.85rem; color:#78350f;">🔔 Temporizador de Recordatorio</strong>
+                <div class="alarm-row">
+                    <select id="alarmMinutes" class="select-input">
+                        <option value="0">Sin temporizador</option>
+                        <option value="1">En 1 minuto (prueba)</option>
+                        <option value="5">En 5 minutos</option>
+                        <option value="10">En 10 minutos</option>
+                        <option value="15">En 15 minutos</option>
+                        <option value="30">En 30 minutos</option>
+                    </select>
+                    <button type="button" id="btnSetAlarm" class="btn-emerald" style="padding:9px 14px; border-radius:10px; font-weight:800; font-size:0.82rem;">Activar</button>
+                </div>
+                <div id="alarmStatusText" style="font-size:0.75rem; color:#92400e; margin-top:6px; font-weight:600;">Ninguna alerta programada.</div>
+            </div>
+
+            <label style="display:flex; align-items:center; justify-content:space-between; background:#f8fafc; padding:11px 12px; border-radius:12px; border:1px solid #e2e8f0; cursor:pointer;">
+                <span style="font-size:0.84rem; font-weight:700; color:#334155;">Confirmación hablada al agregar</span>
+                <input type="checkbox" id="voiceFeedbackToggle" checked="">
+            </label>
+
+            <div class="modal-footer-btns">
+                <button type="button" id="btnSaveSettings" class="btn-full btn-emerald">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================
+         JAVASCRIPT 100% AUTOCONTENIDO Y LIBRE DE ERRORES
+         ========================================================= -->
+    <script>
+        (function () {
+            'use strict';
+
+            document.addEventListener('DOMContentLoaded', function () {
+                // ==========================================
+                // 1. ESTADO Y PERSISTENCIA SEGURA
+                // ==========================================
+                var STORAGE_ITEMS = 'gondola_express_items_v3';
+                var STORAGE_SETTINGS = 'gondola_express_settings_v3';
+                var memoryStore = {};
+
+                var items = [];
+                var settings = {
+                    waPhone: '',
+                    customHeader: '📦 PEDIDO RELLENO DE GÓNDOLA',
+                    voiceFeedback: true
+                };
+
+                var currentFilter = 'all';
+                var isListening = false;
+                var isSpeaking = false;
+                var pendingClearConfirm = false;
+                var alarmTimer = null;
+                var toastTimer = null;
+
+                var recognition = null;
+                var selectedSpanishVoice = null;
+                var activeUtterance = null;
+                var activeHtmlAudio = null;
+                var activeSkipFn = null;
+                var speechToken = 0;
+
+                function safeGetStorage(key) {
+                    try {
+                        return window.localStorage.getItem(key);
+                    } catch (e) {
+                        return Object.prototype.hasOwnProperty.call(memoryStore, key) ? memoryStore[key] : null;
+                    }
+                }
+
+                function safeSetStorage(key, val) {
+                    memoryStore[key] = val;
+                    try {
+                        window.localStorage.setItem(key, val);
+                    } catch (e) {
+                        // Respaldo en memoria si localStorage está restringido
+                    }
+                }
+
+                function loadState() {
+                    try {
+                        var savedItems = safeGetStorage(STORAGE_ITEMS);
+                        if (savedItems) {
+                            var parsed = JSON.parse(savedItems);
+                            if (Array.isArray(parsed)) items = parsed;
+                        }
+                    } catch (e) {
+                        items = [];
+                    }
+
+                    try {
+                        var savedSettings = safeGetStorage(STORAGE_SETTINGS);
+                        if (savedSettings) {
+                            var parsedSet = JSON.parse(savedSettings);
+                            if (parsedSet && typeof parsedSet === 'object') {
+                                settings.waPhone = parsedSet.waPhone || '';
+                                settings.customHeader = parsedSet.customHeader || '📦 PEDIDO RELLENO DE GÓNDOLA';
+                                settings.voiceFeedback = parsedSet.voiceFeedback !== false;
+                            }
+                        }
+                    } catch (e) {}
+
+                    var phoneEl = document.getElementById('waPhoneInput');
+                    var headerEl = document.getElementById('customHeaderInput');
+                    var voiceToggleEl = document.getElementById('voiceFeedbackToggle');
+                    if (phoneEl) phoneEl.value = settings.waPhone;
+                    if (headerEl) headerEl.value = settings.customHeader;
+                    if (voiceToggleEl) voiceToggleEl.checked = settings.voiceFeedback;
+                }
+
+                function saveItems() {
+                    safeSetStorage(STORAGE_ITEMS, JSON.stringify(items));
+                }
+
+                // ==========================================
+                // 2. UTILIDADES DE INTERFAZ Y AUDIO BEEP
+                // ==========================================
+                function showToast(msg, icon) {
+                    var toast = document.getElementById('toast');
+                    var msgEl = document.getElementById('toastMessage');
+                    var iconEl = document.getElementById('toastIcon');
+                    if (!toast || !msgEl) return;
+
+                    msgEl.textContent = msg;
+                    if (iconEl) iconEl.textContent = icon || '✅';
+                    toast.classList.add('show');
+
+                    if (toastTimer) clearTimeout(toastTimer);
+                    toastTimer = setTimeout(function () {
+                        toast.classList.remove('show');
+                    }, 2800);
+                }
+
+                function showDiagnostic(msg, type) {
+                    var banner = document.getElementById('voiceDiagnosticBanner');
+                    if (!banner) return;
+                    if (!msg) {
+                        banner.classList.add('hidden');
+                        return;
+                    }
+                    banner.textContent = msg;
+                    banner.className = 'diagnostic-banner ' + (type === 'error' ? 'diagnostic-error' : 'diagnostic-warn');
+                }
+
+                function playAlertBeep() {
+                    try {
+                        var AudioCtx = window.AudioContext || window.webkitAudioContext;
+                        if (!AudioCtx) return;
+                        var ctx = new AudioCtx();
+                        var osc = ctx.createOscillator();
+                        var gain = ctx.createGain();
+                        osc.type = 'sine';
+                        osc.frequency.setValueAtTime(880, ctx.currentTime);
+                        gain.gain.setValueAtTime(0.18, ctx.currentTime);
+                        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.35);
+                        osc.connect(gain);
+                        gain.connect(ctx.destination);
+                        osc.start();
+                        osc.stop(ctx.currentTime + 0.35);
+                    } catch (e) {}
+                }
+
+                function normalizeText(str) {
+                    return String(str || '')
+                        .toLowerCase()
+                        .normalize('NFD')
+                        .replace(/[\u0300-\u036f]/g, '')
+                        .trim();
+                }
+
+                function capitalizeFirst(str) {
+                    var s = String(str || '').trim();
+                    if (!s) return '';
+                    return s.charAt(0).toUpperCase() + s.slice(1);
+                }
+
+                function escapeHtml(str) {
+                    return String(str || '')
+                        .replace(/&/g, '&amp;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;')
+                        .replace(/"/g, '&quot;');
+                }
+
+                // ==========================================
+                // 3. PARSER DE NÚMEROS Y DIVISIÓN MÚLTIPLE
+                // ==========================================
+                var SPANISH_NUMBERS = {
+                    'un': 1, 'uno': 1, 'una': 1,
+                    'dos': 2, 'tres': 3, 'cuatro': 4, 'cinco': 5,
+                    'seis': 6, 'siete': 7, 'ocho': 8, 'nueve': 9, 'diez': 10,
+                    'once': 11, 'doce': 12, 'trece': 13, 'catorce': 14, 'quince': 15,
+                    'dieciseis': 16, 'diecisiete': 17, 'dieciocho': 18, 'diecinueve': 19,
+                    'veinte': 20, 'veintiuno': 21, 'veintiun': 21, 'veintiuna': 21,
+                    'veintidos': 22, 'veintitres': 23, 'veinticuatro': 24, 'veinticinco': 25,
+                    'veintiseis': 26, 'veintisiete': 27, 'veintiocho': 28, 'veintinueve': 29,
+                    'treinta': 30, 'cuarenta': 40, 'cincuenta': 50,
+                    'sesenta': 60, 'setenta': 70, 'ochenta': 80, 'noventa': 90, 'cien': 100
+                };
+
+                function parseSpanishNumberToken(token) {
+                    var clean = normalizeText(token).replace(/[^a-z0-9]/g, '');
+                    if (!clean) return null;
+                    if (/^\d+$/.test(clean)) {
+                        var n = parseInt(clean, 10);
+                        return n > 0 ? n : null;
+                    }
+                    if (Object.prototype.hasOwnProperty.call(SPANISH_NUMBERS, clean)) {
+                        return SPANISH_NUMBERS[clean];
+                    }
+                    return null;
+                }
+
+                function cleanProductName(rawWords) {
+                    var skipStart = {
+                        'agregar': true, 'agrega': true, 'anadir': true, 'anade': true,
+                        'sumar': true, 'suma': true, 'poner': true, 'pon': true,
+                        'necesito': true, 'quiero': true, 'faltan': true, 'falta': true,
+                        'de': true, 'del': true, 'la': true, 'el': true, 'los': true, 'las': true, 'y': true
+                    };
+                    var skipEnd = {
+                        'cantidad': true, 'cantidades': true, 'unidad': true, 'unidades': true,
+                        'pieza': true, 'piezas': true, 'caja': true, 'cajas': true,
+                        'lata': true, 'latas': true, 'paquete': true, 'paquetes': true, 'de': true
+                    };
+
+                    var words = rawWords.slice();
+                    while (words.length > 0 && skipStart[normalizeText(words[0])]) {
+                        words.shift();
+                    }
+                    while (words.length > 1 && skipEnd[normalizeText(words[words.length - 1])]) {
+                        words.pop();
+                    }
+                    return capitalizeFirst(words.join(' '));
+                }
+
+                // Divide frases como "toalla sanitaria 5, jugo campestre 10" justo después de cada cantidad
+                function parseMultipleProducts(phrase) {
+                    var cleaned = String(phrase || '')
+                        .replace(/[,;]+/g, ' ')
+                        .replace(/\s+/g, ' ')
+                        .trim();
+
+                    if (!cleaned) return [];
+
+                    var tokens = cleaned.split(' ');
+                    var results = [];
+                    var currentWords = [];
+                    var i = 0;
+
+                    while (i < tokens.length) {
+                        var numVal = parseSpanishNumberToken(tokens[i]);
+
+                        // Soporte para compuestos como "treinta y cinco"
+                        if (numVal !== null && numVal >= 30 && numVal % 10 === 0 && i + 2 < tokens.length && normalizeText(tokens[i + 1]) === 'y') {
+                            var unitVal = parseSpanishNumberToken(tokens[i + 2]);
+                            if (unitVal !== null && unitVal >= 1 && unitVal <= 9) {
+                                numVal += unitVal;
+                                i += 2;
+                            }
+                        }
+
+                        if (numVal !== null) {
+                            // Ignorar palabras posteriores de unidad ("unidades", "piezas", etc.)
+                            while (i + 1 < tokens.length) {
+                                var nextNorm = normalizeText(tokens[i + 1]);
+                                if (nextNorm === 'unidad' || nextNorm === 'unidades' || nextNorm === 'pieza' || nextNorm === 'piezas') {
+                                    i++;
+                                } else {
+                                    break;
+                                }
+                            }
+
+                            if (currentWords.length > 0) {
+                                var prodName = cleanProductName(currentWords);
+                                if (prodName) {
+                                    results.push({ name: prodName, qty: numVal });
+                                }
+                                currentWords = [];
+                            } else {
+                                // Caso inverso: "4 leche entera" -> el número va antes del nombre
+                                i++;
+                                var trailingWords = [];
+                                while (i < tokens.length && parseSpanishNumberToken(tokens[i]) === null) {
+                                    trailingWords.push(tokens[i]);
+                                    i++;
+                                }
+                                var prodName2 = cleanProductName(trailingWords);
+                                if (prodName2) {
+                                    results.push({ name: prodName2, qty: numVal });
+                                }
+                                continue;
+                            }
+                        } else {
+                            currentWords.push(tokens[i]);
+                        }
+                        i++;
+                    }
+
+                    // Si quedó un producto al final sin número explícito, asumir cantidad 1
+                    if (currentWords.length > 0) {
+                        var leftover = cleanProductName(currentWords);
+                        if (leftover && leftover.length >= 2) {
+                            results.push({ name: leftover, qty: 1 });
+                        }
+                    }
+
+                    return results;
+                }
+
+                // ==========================================
+                // 4. CRUD DE PRODUCTOS Y RENDERIZADO
+                // ==========================================
+                function addOrUpdateProduct(name, qty, silentVoice) {
+                    var cleanName = capitalizeFirst(name);
+                    var quantity = Math.max(1, parseInt(qty, 10) || 1);
+                    if (!cleanName) return;
+
+                    var normTarget = normalizeText(cleanName);
+                    var existingIndex = -1;
+
+                    for (var i = 0; i < items.length; i++) {
+                        if (normalizeText(items[i].name) === normTarget) {
+                            existingIndex = i;
+                            break;
+                        }
+                    }
+
+                    if (existingIndex !== -1) {
+                        items[existingIndex].qty += quantity;
+                        items[existingIndex].completed = false;
+                        showToast('Actualizado: ' + items[existingIndex].name + ' (' + items[existingIndex].qty + ')', '➕');
+                    } else {
+                        items.unshift({
+                            id: 'item_' + Date.now() + '_' + Math.floor(Math.random() * 10000),
+                            name: cleanName,
+                            qty: quantity,
+                            completed: false
+                        });
+                        showToast('Agregado: ' + cleanName + ' (' + quantity + ')', '✅');
+                    }
+
+                    saveItems();
+                    renderList();
+
+                    if (!silentVoice && settings.voiceFeedback) {
+                        speakPhraseQueue([cleanName + ', ' + quantity], null, false, false);
+                    }
+                }
+
+                function toggleItemCompleted(id) {
+                    for (var i = 0; i < items.length; i++) {
+                        if (items[i].id === id) {
+                            items[i].completed = !items[i].completed;
+                            saveItems();
+                            renderList();
+                            return;
+                        }
+                    }
+                }
+
+                function adjustItemQty(id, delta) {
+                    for (var i = 0; i < items.length; i++) {
+                        if (items[i].id === id) {
+                            var nextQty = items[i].qty + delta;
+                            if (nextQty <= 0) {
+                                items.splice(i, 1);
+                            } else {
+                                items[i].qty = nextQty;
+                            }
+                            saveItems();
+                            renderList();
+                            return;
+                        }
+                    }
+                }
+
+                function removeItem(id) {
+                    for (var i = 0; i < items.length; i++) {
+                        if (items[i].id === id) {
+                            var removedName = items[i].name;
+                            items.splice(i, 1);
+                            saveItems();
+                            renderList();
+                            showToast('Eliminado: ' + removedName, '🗑️');
+                            return;
+                        }
+                    }
+                }
+
+                function setFilter(filterName) {
+                    currentFilter = filterName;
+                    var tabs = document.querySelectorAll('.filter-tab');
+                    for (var i = 0; i < tabs.length; i++) {
+                        if (tabs[i].getAttribute('data-filter') === filterName) {
+                            tabs[i].classList.add('active');
+                        } else {
+                            tabs[i].classList.remove('active');
+                        }
+                    }
+                    renderList();
+                }
+
+                function renderList() {
+                    var container = document.getElementById('productListContainer');
+                    var emptyState = document.getElementById('emptyState');
+                    var itemsCountEl = document.getElementById('totalItemsCount');
+                    var unitsCountEl = document.getElementById('totalUnitsCount');
+
+                    var totalUnits = 0;
+                    for (var k = 0; k < items.length; k++) {
+                        if (!items[k].completed) {
+                            totalUnits += items[k].qty;
+                        }
+                    }
+
+                    if (itemsCountEl) itemsCountEl.textContent = String(items.length);
+                    if (unitsCountEl) unitsCountEl.textContent = String(totalUnits);
+
+                    var filtered = items.filter(function (item) {
+                        if (currentFilter === 'pending') return !item.completed;
+                        if (currentFilter === 'completed') return item.completed;
+                        return true;
+                    });
+
+                    if (filtered.length === 0) {
+                        container.innerHTML = '';
+                        emptyState.classList.remove('hidden');
+                        return;
+                    }
+
+                    emptyState.classList.add('hidden');
+                    var html = '';
+                    for (var i = 0; i < filtered.length; i++) {
+                        var it = filtered[i];
+                        html += '' +
+                            '<div class="product-card ' + (it.completed ? 'completed' : '') + '">' +
+                                '<div class="product-left">' +
+                                    '<button type="button" class="check-btn" data-action="toggle" data-id="' + it.id + '" title="Marcar recogido">' +
+                                        '<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">' +
+                                            '<path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>' +
+                                        '</svg>' +
+                                    '</button>' +
+                                    '<div class="product-info">' +
+                                        '<div class="product-name">' + escapeHtml(it.name) + '</div>' +
+                                        '<div class="product-meta">' + (it.completed ? '✅ Recogido en góndola' : '⏳ Pendiente de recoger') + '</div>' +
+                                    '</div>' +
+                                '</div>' +
+                                '<div class="product-right">' +
+                                    '<div class="card-qty-box">' +
+                                        '<button type="button" class="card-qty-btn" data-action="minus" data-id="' + it.id + '" title="Restar 1">−</button>' +
+                                        '<span class="card-qty-val">' + it.qty + '</span>' +
+                                        '<button type="button" class="card-qty-btn" data-action="plus" data-id="' + it.id + '" title="Sumar 1">+</button>' +
+                                    '</div>' +
+                                    '<button type="button" class="delete-item-btn" data-action="delete" data-id="' + it.id + '" title="Eliminar producto">' +
+                                        '<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">' +
+                                            '<path stroke-linecap="round" stroke-linejoin="round" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>' +
+                                        '</svg>' +
+                                    '</button>' +
+                                '</div>' +
+                            '</div>';
+                    }
+                    container.innerHTML = html;
+                }
+
+                // ==========================================
+                // 5. LECTURA EN VOZ ALTA HÍBRIDA (SIN FALLOS)
+                // ==========================================
+                function initSpeechSynthesis() {
+                    if (!('speechSynthesis' in window)) return;
+                    var selectVoice = function () {
+                        try {
+                            var voices = window.speechSynthesis.getVoices() || [];
+                            for (var i = 0; i < voices.length; i++) {
+                                var lang = (voices[i].lang || '').toLowerCase();
+                                if (lang === 'es-es' || lang === 'es-mx' || lang === 'es-419' || lang === 'es-us') {
+                                    selectedSpanishVoice = voices[i];
+                                    return;
+                                }
+                            }
+                            for (var j = 0; j < voices.length; j++) {
+                                if ((voices[j].lang || '').toLowerCase().indexOf('es') === 0) {
+                                    selectedSpanishVoice = voices[j];
+                                    return;
+                                }
+                            }
+                        } catch (e) {}
+                    };
+                    selectVoice();
+                    if (typeof window.speechSynthesis.onvoiceschanged !== 'undefined') {
+                        window.speechSynthesis.onvoiceschanged = selectVoice;
+                    }
+                }
+
+                function updateReadingCard(visible, badgeText, mainText) {
+                    var card = document.getElementById('readingProgressCard');
+                    var badge = document.getElementById('readingStepBadge');
+                    var textEl = document.getElementById('readingCurrentText');
+                    if (!card) return;
+                    if (!visible) {
+                        card.classList.add('hidden');
+                        return;
+                    }
+                    if (badge && badgeText) badge.textContent = badgeText;
+                    if (textEl && mainText) textEl.textContent = mainText;
+                    card.classList.remove('hidden');
+                }
+
+                function stopReading() {
+                    speechToken++;
+                    isSpeaking = false;
+                    activeUtterance = null;
+                    activeSkipFn = null;
+
+                    if ('speechSynthesis' in window) {
+                        try { window.speechSynthesis.cancel(); } catch (e) {}
+                    }
+                    if (activeHtmlAudio) {
+                        try {
+                            activeHtmlAudio.pause();
+                            activeHtmlAudio.removeAttribute('src');
+                            activeHtmlAudio.load();
+                        } catch (e) {}
+                        activeHtmlAudio = null;
+                    }
+
+                    updateReadingCard(false);
+                    var speakBtn = document.getElementById('speakBtn');
+                    var speakBtnText = document.getElementById('speakBtnText');
+                    if (speakBtn) speakBtn.classList.remove('speaking');
+                    if (speakBtnText) speakBtnText.textContent = 'Leer Pedido';
+                }
+
+                function playFallbackTtsAudio(phrase, token, onDone) {
+                    var settled = false;
+                    var encoded = encodeURIComponent(String(phrase || '').slice(0, 180));
+                    var urls = [
+                        'https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=es&q=' + encoded,
+                        'https://api.streamelements.com/kappa/v2/speech?voice=Mia&text=' + encoded
+                    ];
+                    var idx = 0;
+                    var stepTimer = null;
+
+                    var complete = function () {
+                        if (settled) return;
+                        settled = true;
+                        if (stepTimer) clearTimeout(stepTimer);
+                        if (token === speechToken) onDone();
+                    };
+
+                    activeSkipFn = function () {
+                        if (activeHtmlAudio) {
+                            try { activeHtmlAudio.pause(); } catch (e) {}
+                        }
+                        complete();
+                    };
+
+                    var trySource = function () {
+                        if (settled || token !== speechToken) return;
+                        if (idx >= urls.length) {
+                            playAlertBeep();
+                            stepTimer = setTimeout(complete, Math.max(2400, phrase.length * 90));
+                            return;
+                        }
+
+                        var audio = new Audio();
+                        activeHtmlAudio = audio;
+                        audio.src = urls[idx++];
+
+                        if (stepTimer) clearTimeout(stepTimer);
+                        stepTimer = setTimeout(function () {
+                            try { audio.pause(); } catch (e) {}
+                            complete();
+                        }, Math.max(4500, phrase.length * 160));
+
+                        audio.onended = complete;
+                        audio.onerror = function () {
+                            if (stepTimer) clearTimeout(stepTimer);
+                            trySource();
+                        };
+
+                        try {
+                            var p = audio.play();
+                            if (p && typeof p.catch === 'function') {
+                                p.catch(function () {
+                                    if (stepTimer) clearTimeout(stepTimer);
+                                    trySource();
+                                });
+                            }
+                        } catch (e) {
+                            if (stepTimer) clearTimeout(stepTimer);
+                            trySource();
+                        }
+                    };
+
+                    trySource();
+                }
+
+                function playNativeTtsPhrase(phrase, token, onDone, onFallbackNeeded) {
+                    if (!('speechSynthesis' in window) || typeof SpeechSynthesisUtterance === 'undefined') {
+                        onFallbackNeeded();
+                        return;
+                    }
+
+                    var settled = false;
+                    var started = false;
+                    var utterance = new SpeechSynthesisUtterance(phrase);
+                    activeUtterance = utterance;
+
+                    if (selectedSpanishVoice) {
+                        utterance.voice = selectedSpanishVoice;
+                        utterance.lang = selectedSpanishVoice.lang;
+                    } else {
+                        utterance.lang = 'es-ES';
+                    }
+                    utterance.rate = 1.0;
+                    utterance.pitch = 1.0;
+                    utterance.volume = 1.0;
+
+                    // Si el navegador no inicia la voz en 800ms (WebView/iframe), pasar al respaldo híbrido
+                    var watchdog = setTimeout(function () {
+                        if (!started && !settled && token === speechToken) {
+                            settled = true;
+                            try { window.speechSynthesis.cancel(); } catch (e) {}
+                            onFallbackNeeded();
+                        }
+                    }, 800);
+
+                    var maxDuration = setTimeout(function () {
+                        if (!settled && token === speechToken) {
+                            settled = true;
+                            onDone();
+                        }
+                    }, Math.max(4500, phrase.length * 160));
+
+                    activeSkipFn = function () {
+                        if (settled) return;
+                        settled = true;
+                        clearTimeout(watchdog);
+                        clearTimeout(maxDuration);
+                        try { window.speechSynthesis.cancel(); } catch (e) {}
+                        onDone();
+                    };
+
+                    utterance.onstart = function () {
+                        started = true;
+                        clearTimeout(watchdog);
+                    };
+
+                    utterance.onend = function () {
+                        if (settled) return;
+                        settled = true;
+                        clearTimeout(watchdog);
+                        clearTimeout(maxDuration);
+                        if (token === speechToken) onDone();
+                    };
+
+                    utterance.onerror = function (ev) {
+                        if (settled) return;
+                        settled = true;
+                        clearTimeout(watchdog);
+                        clearTimeout(maxDuration);
+                        var err = ev && ev.error ? ev.error : '';
+                        if (err === 'interrupted' || err === 'canceled') return;
+                        if (token === speechToken) onFallbackNeeded();
+                    };
+
+                    try {
+                        if (window.speechSynthesis.paused) window.speechSynthesis.resume();
+                        window.speechSynthesis.speak(utterance);
+                    } catch (e) {
+                        if (!settled) {
+                            settled = true;
+                            clearTimeout(watchdog);
+                            clearTimeout(maxDuration);
+                            onFallbackNeeded();
+                        }
+                    }
+                }
+
+                function speakPhraseQueue(phrases, onComplete, forceSpeak, showProgress) {
+                    if (!settings.voiceFeedback && !forceSpeak) return;
+
+                    var queue = [];
+                    for (var i = 0; i < phrases.length; i++) {
+                        var t = String(phrases[i] || '').trim();
+                        if (t) queue.push(t);
+                    }
+                    if (queue.length === 0) {
+                        if (onComplete) onComplete();
+                        return;
+                    }
+
+                    var token = ++speechToken;
+                    if ('speechSynthesis' in window) {
+                        try { window.speechSynthesis.cancel(); } catch (e) {}
+                    }
+                    if (activeHtmlAudio) {
+                        try { activeHtmlAudio.pause(); } catch (e) {}
+                        activeHtmlAudio = null;
+                    }
+
+                    var wasListening = isListening;
+                    isSpeaking = true;
+                    if (wasListening && recognition) {
+                        try { recognition.stop(); } catch (e) {}
+                    }
+
+                    var useNative = true;
+                    var index = 0;
+                    var total = queue.length;
+
+                    var finishAll = function () {
+                        if (token !== speechToken) return;
+                        isSpeaking = false;
+                        activeUtterance = null;
+                        activeHtmlAudio = null;
+                        activeSkipFn = null;
+                        if (showProgress) updateReadingCard(false);
+                        if (onComplete) onComplete();
+
+                        var cont = document.getElementById('continuousMode');
+                        if (wasListening && recognition && cont && cont.checked) {
+                            isListening = true;
+                            setTimeout(function () {
+                                if (isListening && !isSpeaking) {
+                                    try { recognition.start(); } catch (e) {}
+                                }
+                            }, 250);
+                        }
+                    };
+
+                    var nextStep = function () {
+                        if (token !== speechToken) return;
+                        if (index >= total) {
+                            finishAll();
+                            return;
+                        }
+
+                        var step = index + 1;
+                        var phrase = queue[index++];
+                        if (showProgress) {
+                            updateReadingCard(true, 'Leyendo ' + step + ' de ' + total, phrase);
+                        }
+
+                        var advance = function () {
+                            if (token === speechToken) setTimeout(nextStep, 100);
+                        };
+
+                        if (useNative) {
+                            playNativeTtsPhrase(phrase, token, advance, function () {
+                                useNative = false;
+                                playFallbackTtsAudio(phrase, token, advance);
+                            });
+                        } else {
+                            playFallbackTtsAudio(phrase, token, advance);
+                        }
+                    };
+
+                    nextStep();
+                }
+
+                function toggleReadPedido() {
+                    if (isSpeaking) {
+                        stopReading();
+                        return;
+                    }
+
+                    var pending = items.filter(function (it) { return !it.completed; });
+                    if (pending.length === 0) {
+                        showToast('No hay productos pendientes para leer', 'ℹ️');
+                        speakPhraseQueue(['No tienes productos pendientes en la lista.'], null, true, false);
+                        return;
+                    }
+
+                    var speakBtn = document.getElementById('speakBtn');
+                    var speakBtnText = document.getElementById('speakBtnText');
+                    if (speakBtn) speakBtn.classList.add('speaking');
+                    if (speakBtnText) speakBtnText.textContent = 'Detener Lectura';
+
+                    var phrases = [
+                        'Pedido pendiente. Tienes ' + pending.length + ' ' + (pending.length === 1 ? 'producto' : 'productos') + ' por recoger.'
+                    ];
+                    for (var i = 0; i < pending.length; i++) {
+                        phrases.push((i + 1) + ': ' + pending[i].name + ' — ' + pending[i].qty + ' ' + (pending[i].qty === 1 ? 'unidad' : 'unidades'));
+                    }
+                    phrases.push('Fin del pedido.');
+
+                    speakPhraseQueue(phrases, function () {
+                        if (speakBtn) speakBtn.classList.remove('speaking');
+                        if (speakBtnText) speakBtnText.textContent = 'Leer Pedido';
+                    }, true, true);
+                }
+
+                // ==========================================
+                // 6. RECONOCIMIENTO DE VOZ DIRECTO EN CHROME
+                // ==========================================
+                function setMicVisualState(listening) {
+                    var micBtn = document.getElementById('micBtn');
+                    var titleEl = document.getElementById('micBtnTitle');
+                    var subEl = document.getElementById('micBtnSub');
+                    var waves = document.getElementById('soundWaves');
+                    var dot = document.getElementById('voiceStatusDot');
+
+                    if (listening) {
+                        micBtn.classList.add('listening');
+                        titleEl.textContent = 'Escuchando... (Toca para pausar)';
+                        subEl.textContent = 'Dicta productos y cantidades seguidos';
+                        waves.classList.remove('hidden');
+                        dot.className = 'status-dot active';
+                    } else {
+                        micBtn.classList.remove('listening');
+                        titleEl.textContent = 'Activar Comando de Voz';
+                        subEl.textContent = 'Ej: "Toalla sanitaria 5, jugo campestre 10"';
+                        waves.classList.add('hidden');
+                        dot.className = 'status-dot ready';
+                    }
+                }
+
+                function initSpeechRecognition() {
+                    var isInIframe = false;
+                    try {
+                        isInIframe = window.self !== window.top;
+                    } catch (e) {
+                        isInIframe = true;
+                    }
+
+                    if (isInIframe) {
+                        showDiagnostic('Aviso: Estás en una vista previa embebida. Si el micrófono está bloqueado aquí, toca "Descargar App" arriba y abre el archivo en Google Chrome.', 'warn');
+                    }
+
+                    var SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+                    if (!SpeechRec) {
+                        showDiagnostic('Tu navegador no dispone de reconocimiento de voz. Abre este archivo en Google Chrome o usa los botones y pruebas rápidas.', 'error');
+                        return;
+                    }
+
+                    recognition = new SpeechRec();
+                    recognition.lang = 'es-ES';
+                    recognition.interimResults = true;
+                    recognition.continuous = false;
+                    recognition.maxAlternatives = 1;
+
+                    recognition.onstart = function () {
+                        isListening = true;
+                        setMicVisualState(true);
+                        showDiagnostic('', 'warn');
+                    };
+
+                    recognition.onresult = function (event) {
+                        var transcriptEl = document.getElementById('voiceTranscript');
+                        var interimText = '';
+                        var finalText = '';
+
+                        for (var i = event.resultIndex; i < event.results.length; i++) {
+                            var chunk = event.results[i][0].transcript;
+                            if (event.results[i].isFinal) {
+                                finalText += chunk;
+                            } else {
+                                interimText += chunk;
+                            }
+                        }
+
+                        if (interimText && transcriptEl) {
+                            transcriptEl.textContent = '🎤 "' + interimText.trim() + '..."';
+                        }
+
+                        if (finalText.trim()) {
+                            var cleanFinal = finalText.trim();
+                            if (transcriptEl) transcriptEl.textContent = '✅ "' + cleanFinal + '"';
+                            processVoiceCommand(cleanFinal);
+                        }
+                    };
+
+                    recognition.onerror = function (event) {
+                        var err = event && event.error ? event.error : 'unknown';
+                        if (err === 'no-speech' || err === 'aborted') {
+                            return;
+                        }
+                        isListening = false;
+                        setMicVisualState(false);
+
+                        if (err === 'not-allowed' || err === 'service-not-allowed') {
+                            showDiagnostic('Permiso de micrófono bloqueado. Si estás en una vista previa, descarga la app y ábrela directamente en Google Chrome (permite el micrófono una sola vez y quedará guardado).', 'error');
+                        } else if (err === 'network') {
+                            showDiagnostic('Error de red en el reconocimiento de voz de Chrome. Verifica tu conexión a internet.', 'warn');
+                        } else {
+                            showDiagnostic('Micrófono detenido (' + err + '). Toca el botón azul para reintentar.', 'warn');
+                        }
+                    };
+
+                    recognition.onend = function () {
+                        var cont = document.getElementById('continuousMode');
+                        if (isListening && !isSpeaking && cont && cont.checked) {
+                            setTimeout(function () {
+                                if (isListening && !isSpeaking) {
+                                    try {
+                                        recognition.start();
+                                    } catch (e) {}
+                                }
+                            }, 200);
+                        } else if (!isSpeaking) {
+                            isListening = false;
+                            setMicVisualState(false);
+                        }
+                    };
+                }
+
+                // Activación directa sin getUserMedia previo para evitar doble solicitud de permisos en Chrome
+                function toggleVoiceRecognition() {
+                    if (!recognition) {
+                        showToast('Reconocimiento de voz no disponible en este visor', '⚠️');
+                        return;
+                    }
+
+                    if (isListening) {
+                        isListening = false;
+                        setMicVisualState(false);
+                        try { recognition.stop(); } catch (e) {}
+                        return;
+                    }
+
+                    if (isSpeaking) {
+                        stopReading();
+                    }
+
+                    try {
+                        isListening = true;
+                        setMicVisualState(true);
+                        recognition.start();
+                    } catch (err) {
+                        // Si ya estaba arrancando, reiniciar limpiamente
+                        try {
+                            recognition.stop();
+                            setTimeout(function () {
+                                try { recognition.start(); } catch (e2) {}
+                            }, 200);
+                        } catch (e3) {}
+                    }
+                }
+
+                // ==========================================
+                // 7. PROCESADOR DE COMANDOS DE VOZ
+                // ==========================================
+                function processVoiceCommand(rawCommand) {
+                    var cmdNorm = normalizeText(rawCommand);
+                    var transcriptEl = document.getElementById('voiceTranscript');
+                    if (transcriptEl) transcriptEl.textContent = '🗣️ "' + rawCommand + '"';
+
+                    // 1. Confirmación de borrado total
+                    if (pendingClearConfirm && (cmdNorm === 'confirmar' || cmdNorm === 'si' || cmdNorm === 'si borrar')) {
+                        executeClearAll(false);
+                        return;
+                    }
+                    if (pendingClearConfirm && (cmdNorm === 'cancelar' || cmdNorm === 'no')) {
+                        cancelClearAll();
+                        return;
+                    }
+
+                    // 2. Leer pedido
+                    if (cmdNorm === 'leer pedido' || cmdNorm === 'leer lista' || cmdNorm === 'que falta' || cmdNorm === 'dime el pedido') {
+                        toggleReadPedido();
+                        return;
+                    }
+
+                    // 3. Borrar todo
+                    if (cmdNorm === 'borrar todo' || cmdNorm === 'limpiar lista' || cmdNorm === 'pedido terminado' || cmdNorm === 'vaciar lista') {
+                        requestClearAll(true);
+                        return;
+                    }
+
+                    // 4. Enviar a WhatsApp / Telegram
+                    if (cmdNorm.indexOf('whatsapp') !== -1 || cmdNorm.indexOf('wasap') !== -1) {
+                        sendToWhatsApp();
+                        return;
+                    }
+                    if (cmdNorm.indexOf('telegram') !== -1) {
+                        sendToTelegram();
+                        return;
+                    }
+
+                    // 5. Marcar como listo ("listo leche", "recogido jugo")
+                    if (cmdNorm.indexOf('listo ') === 0 || cmdNorm.indexOf('recogido ') === 0 || cmdNorm.indexOf('completado ') === 0) {
+                        var targetDone = cmdNorm.replace(/^(listo|recogido|completado)\s+/, '').trim();
+                        for (var i = 0; i < items.length; i++) {
+                            if (normalizeText(items[i].name).indexOf(targetDone) !== -1) {
+                                items[i].completed = true;
+                                saveItems();
+                                renderList();
+                                showToast('Recogido: ' + items[i].name, '✅');
+                                speakPhraseQueue(['Listo ' + items[i].name], null, false, false);
+                                return;
+                            }
+                        }
+                        showToast('No encontré "' + targetDone + '" en la lista', '🔍');
+                        return;
+                    }
+
+                    // 6. Borrar producto específico ("borrar jugo")
+                    if (cmdNorm.indexOf('borrar ') === 0 || cmdNorm.indexOf('eliminar ') === 0 || cmdNorm.indexOf('quitar ') === 0) {
+                        var targetDel = cmdNorm.replace(/^(borrar|eliminar|quitar)\s+/, '').trim();
+                        for (var j = 0; j < items.length; j++) {
+                            if (normalizeText(items[j].name).indexOf(targetDel) !== -1) {
+                                var delName = items[j].name;
+                                items.splice(j, 1);
+                                saveItems();
+                                renderList();
+                                showToast('Borrado: ' + delName, '🗑️');
+                                speakPhraseQueue(['Borrado ' + delName], null, false, false);
+                                return;
+                            }
+                        }
+                        showToast('No encontré "' + targetDel + '" para borrar', '🔍');
+                        return;
+                    }
+
+                    // 7. Agregar uno o múltiples productos divididos por cantidad
+                    var parsedList = parseMultipleProducts(rawCommand);
+                    if (parsedList.length === 0) {
+                        showToast('No pude identificar productos en el comando', '⚠️');
+                        return;
+                    }
+
+                    var spokenConfirmations = [];
+                    for (var p = 0; p < parsedList.length; p++) {
+                        addOrUpdateProduct(parsedList[p].name, parsedList[p].qty, true);
+                        spokenConfirmations.push(parsedList[p].name + ' ' + parsedList[p].qty);
+                    }
+
+                    if (parsedList.length > 1) {
+                        showToast('Se registraron ' + parsedList.length + ' productos por separado', '📦');
+                    }
+
+                    if (settings.voiceFeedback) {
+                        speakPhraseQueue(['Agregado: ' + spokenConfirmations.join(', ')], null, false, false);
+                    }
+                }
+
+                // ==========================================
+                // 8. BORRADO, CONFIGURACIÓN, COMPARTIR Y DESCARGA
+                // ==========================================
+                function requestClearAll(byVoice) {
+                    if (items.length === 0) {
+                        showToast('La lista ya está vacía', 'ℹ️');
+                        return;
+                    }
+                    pendingClearConfirm = true;
+                    document.getElementById('confirmClearModal').classList.remove('hidden');
+                    if (byVoice) {
+                        speakPhraseQueue(['¿Seguro que deseas borrar toda la lista? Di confirmar o cancelar.'], null, true, false);
+                    }
+                }
+
+                function cancelClearAll() {
+                    pendingClearConfirm = false;
+                    document.getElementById('confirmClearModal').classList.add('hidden');
+                }
+
+                function executeClearAll(silent) {
+                    pendingClearConfirm = false;
+                    document.getElementById('confirmClearModal').classList.add('hidden');
+                    items = [];
+                    saveItems();
+                    renderList();
+                    showToast('Lista borrada por completo', '🗑️');
+                    if (!silent && settings.voiceFeedback) {
+                        speakPhraseQueue(['Lista borrada.'], null, false, false);
+                    }
+                }
+
+                function buildFormattedOrderText() {
+                    var pending = items.filter(function (it) { return !it.completed; });
+                    var targetList = pending.length > 0 ? pending : items;
+                    if (targetList.length === 0) return '';
+
+                    var lines = [];
+                    lines.push(settings.customHeader || '📦 PEDIDO RELLENO DE GÓNDOLA');
+                    lines.push('------------------------');
+
+                    var totalUnits = 0;
+                    for (var i = 0; i < targetList.length; i++) {
+                        var statusIcon = targetList[i].completed ? '✅' : '▪️';
+                        lines.push(statusIcon + ' ' + targetList[i].name + ' — Cant: ' + targetList[i].qty);
+                        totalUnits += targetList[i].qty;
+                    }
+
+                    lines.push('------------------------');
+                    lines.push('Total productos: ' + targetList.length + ' | Unidades: ' + totalUnits);
+                    return lines.join('\n');
+                }
+
+                function copyListToClipboard() {
+                    var text = buildFormattedOrderText();
+                    if (!text) {
+                        showToast('No hay productos para copiar', '⚠️');
+                        return;
+                    }
+
+                    var tempArea = document.createElement('textarea');
+                    tempArea.value = text;
+                    tempArea.style.position = 'fixed';
+                    tempArea.style.left = '-9999px';
+                    document.body.appendChild(tempArea);
+                    tempArea.select();
+                    try {
+                        document.execCommand('copy');
+                        showToast('Pedido copiado al portapapeles', '📋');
+                    } catch (e) {
+                        showToast('No se pudo copiar el texto', '⚠️');
+                    }
+                    document.body.removeChild(tempArea);
+                }
+
+                function sendToWhatsApp() {
+                    var text = buildFormattedOrderText();
+                    if (!text) {
+                        showToast('Agrega al menos un producto antes de enviar', '⚠️');
+                        return;
+                    }
+                    var encoded = encodeURIComponent(text);
+                    var cleanPhone = String(settings.waPhone || '').replace(/\D/g, '');
+                    var url = cleanPhone
+                        ? 'https://wa.me/' + cleanPhone + '?text=' + encoded
+                        : 'https://wa.me/?text=' + encoded;
+
+                    window.open(url, '_blank', 'noopener,noreferrer');
+                }
+
+                function sendToTelegram() {
+                    var text = buildFormattedOrderText();
+                    if (!text) {
+                        showToast('Agrega al menos un producto antes de enviar', '⚠️');
+                        return;
+                    }
+                    var encoded = encodeURIComponent(text);
+                    var url = 'https://t.me/share/url?url=' + encodeURIComponent('https://gondola.express') + '&text=' + encoded;
+                    window.open(url, '_blank', 'noopener,noreferrer');
+                }
+
+                function setReminderAlarm() {
+                    var mins = parseInt(document.getElementById('alarmMinutes').value, 10) || 0;
+                    var statusText = document.getElementById('alarmStatusText');
+                    var badge = document.getElementById('alarmBadge');
+
+                    if (alarmTimer) {
+                        clearTimeout(alarmTimer);
+                        alarmTimer = null;
+                    }
+
+                    if (mins <= 0) {
+                        badge.classList.add('hidden');
+                        statusText.textContent = 'Ninguna alerta programada.';
+                        showToast('Temporizador desactivado', '🔕');
+                        return;
+                    }
+
+                    badge.classList.remove('hidden');
+                    statusText.textContent = 'Alerta activa: sonará en ' + mins + ' ' + (mins === 1 ? 'minuto.' : 'minutos.');
+                    showToast('Recordatorio programado en ' + mins + ' min', '🔔');
+
+                    alarmTimer = setTimeout(function () {
+                        badge.classList.add('hidden');
+                        statusText.textContent = '¡Tiempo cumplido! Revisa el relleno de góndola.';
+                        playAlertBeep();
+                        setTimeout(playAlertBeep, 450);
+                        showToast('🔔 ¡Alerta de relleno de góndola!', '🔔');
+                        speakPhraseQueue(['Atención: es momento de revisar el relleno de góndola.'], null, true, false);
+                    }, mins * 60 * 1000);
+                }
+
+                function saveSettings() {
+                    settings.waPhone = document.getElementById('waPhoneInput').value.trim();
+                    settings.customHeader = document.getElementById('customHeaderInput').value.trim() || '📦 PEDIDO RELLENO DE GÓNDOLA';
+                    settings.voiceFeedback = document.getElementById('voiceFeedbackToggle').checked;
+
+                    safeSetStorage(STORAGE_SETTINGS, JSON.stringify(settings));
+                    closeModal('settingsModal');
+                    showToast('Configuración guardada', '⚙️');
+                }
+
+                function downloadApp() {
+                    try {
+                        var fullHtml = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+                        var blob = new Blob([fullHtml], { type: 'text/html;charset=utf-8' });
+                        var url = URL.createObjectURL(blob);
+                        var a = document.createElement('a');
+                        a.href = url;
+                        a.download = 'relleno-gondola.html';
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                        setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+                        showToast('Descargando relleno-gondola.html...', '📥');
+                    } catch (e) {
+                        showToast('Error al generar descarga', '⚠️');
+                    }
+                }
+
+                function openModal(id) {
+                    var el = document.getElementById(id);
+                    if (el) el.classList.remove('hidden');
+                }
+
+                function closeModal(id) {
+                    var el = document.getElementById(id);
+                    if (el) el.classList.add('hidden');
+                }
+
+                // ==========================================
+                // 9. VINCULACIÓN DE EVENTOS (100% VERIFICADOS)
+                // ==========================================
+                document.getElementById('micBtn').addEventListener('click', toggleVoiceRecognition);
+                document.getElementById('speakBtn').addEventListener('click', toggleReadPedido);
+                document.getElementById('btnReadingNext').addEventListener('click', function () {
+                    if (typeof activeSkipFn === 'function') activeSkipFn();
+                });
+                document.getElementById('btnReadingStop').addEventListener('click', stopReading);
+
+                document.getElementById('btnHelp').addEventListener('click', function () { openModal('helpModal'); });
+                document.getElementById('btnSettings').addEventListener('click', function () { openModal('settingsModal'); });
+                document.getElementById('btnDownload').addEventListener('click', downloadApp);
+
+                document.getElementById('btnFormQtyMinus').addEventListener('click', function () {
+                    var input = document.getElementById('productQty');
+                    var val = parseInt(input.value, 10) || 1;
+                    if (val > 1) input.value = String(val - 1);
+                });
+
+                document.getElementById('btnFormQtyPlus').addEventListener('click', function () {
+                    var input = document.getElementById('productQty');
+                    var val = parseInt(input.value, 10) || 1;
+                    input.value = String(val + 1);
+                });
+
+                document.getElementById('addForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    var nameInput = document.getElementById('productName');
+                    var qtyInput = document.getElementById('productQty');
+                    var nameVal = nameInput.value.trim();
+                    var qtyVal = parseInt(qtyInput.value, 10) || 1;
+                    if (!nameVal) return;
+
+                    addOrUpdateProduct(nameVal, qtyVal, false);
+                    nameInput.value = '';
+                    qtyInput.value = '1';
+                    nameInput.focus();
+                });
+
+                document.getElementById('btnCopyList').addEventListener('click', copyListToClipboard);
+                document.getElementById('btnClearAll').addEventListener('click', function () { requestClearAll(false); });
+                document.getElementById('btnCancelClear').addEventListener('click', cancelClearAll);
+                document.getElementById('btnConfirmClear').addEventListener('click', function () { executeClearAll(false); });
+                document.getElementById('btnSetAlarm').addEventListener('click', setReminderAlarm);
+                document.getElementById('btnSaveSettings').addEventListener('click', saveSettings);
+                document.getElementById('btnWhatsApp').addEventListener('click', sendToWhatsApp);
+                document.getElementById('btnTelegram').addEventListener('click', sendToTelegram);
+
+                // Delegación de eventos para acciones dentro de la lista de productos
+                document.getElementById('productListContainer').addEventListener('click', function (e) {
+                    var btn = e.target.closest('button[data-action]');
+                    if (!btn) return;
+                    var action = btn.getAttribute('data-action');
+                    var id = btn.getAttribute('data-id');
+                    if (!id) return;
+
+                    if (action === 'toggle') toggleItemCompleted(id);
+                    else if (action === 'minus') adjustItemQty(id, -1);
+                    else if (action === 'plus') adjustItemQty(id, 1);
+                    else if (action === 'delete') removeItem(id);
+                });
+
+                // Delegación global para chips de prueba rápida, filtros y cierre de modales
+                document.body.addEventListener('click', function (e) {
+                    var chip = e.target.closest('.quick-chip');
+                    if (chip) {
+                        var sample = chip.getAttribute('data-voice-sample');
+                        if (sample) processVoiceCommand(sample);
+                        return;
+                    }
+
+                    var filterBtn = e.target.closest('.filter-tab');
+                    if (filterBtn) {
+                        var f = filterBtn.getAttribute('data-filter');
+                        if (f) setFilter(f);
+                        return;
+                    }
+
+                    var closeBtn = e.target.closest('[data-close-modal]');
+                    if (closeBtn) {
+                        var modalId = closeBtn.getAttribute('data-close-modal');
+                        if (modalId) closeModal(modalId);
+                    }
+                });
+
+                // ==========================================
+                // 10. INICIALIZACIÓN
+                // ==========================================
+                loadState();
+                initSpeechSynthesis();
+                initSpeechRecognition();
+                renderList();
+            });
+        })();
+    </script>
+
+</body></html>
